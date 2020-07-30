@@ -2,7 +2,11 @@ from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
 class AnalyseSentiment:
     def __init__(self, sentence):
-        self.sentence = sentence
+        self.sentence = str(sentence).replace("please ","")
+        self.sentence = str(sentence).replace("pls ","")
+        self.sentence = str(sentence).replace("plz ","")
+        self.sentence = str(sentence).replace("pl ","")
+
     
     def Analyse(self):
         sentiment = {
