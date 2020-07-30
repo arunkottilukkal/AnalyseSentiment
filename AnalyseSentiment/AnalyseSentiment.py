@@ -8,7 +8,7 @@ class AnalyseSentiment:
         sentiment = {
             "sentence":self.sentence,
             "overall_sentiment":"",
-            "overall_sentiment_score":0.00
+            "overall_sentiment_score":0.00,
             "scores":[]
         }
         sid_obj = SentimentIntensityAnalyzer()
